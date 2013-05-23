@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="HS.Alimentacion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <phone:Panorama Title="Alimentacion">
+
+            <!--Panorama item one-->
+            <phone:PanoramaItem Header="Que Comer?">
+                <StackPanel Margin="10,0,10,0">
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Name="btnDesayunoSi" Width="260" Height="165" Tap="btnDesayunoSi_Tap">Desayuno</Button>
+                        <Button Name="btnMedMananaSi" Width="140" Tap="btnMedMananaSi_Tap" >Media Mañana</Button>
+                    </StackPanel>
+
+                    <Button Name="btnAlmuerzoSi" Height="120" Tap="btnAlmuerzoSi_Tap">Almuerzo</Button>
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Name="btnMedTardeSi" Width="200" Height="170" Tap="btnMedTardeSi_Tap">Media Tarde</Button>
+                        <Button Name="btnCenaSi" Width="200" Height="170" Tap="btnCenaSi_Tap">Cena</Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+            <phone:PanoramaItem Header="Que no Comer?">
+                <StackPanel Margin="10,0,10,0">
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Name="btnDesayunoNo" Width="260" Height="165" Tap="btnDesayunoNo_Tap">Desayuno</Button>
+                        <Button Name="btnMedMananaNo" Width="140" Tap="btnMedMananaNo_Tap" >Media Mañana</Button>
+                    </StackPanel>
+
+                    <Button Name="btnAlmuerzoNo" Height="120" Tap="btnAlmuerzoNo_Tap">Almuerzo</Button>
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Name="btnMedTardeNo" Width="200" Height="170" Tap="btnMedTardeNo_Tap">Media Tarde</Button>
+                        <Button Name="btnCenaNo" Width="200" Height="170" Tap="btnCenaNo_Tap">Cena</Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+
+
+</phone:PhoneApplicationPage>
