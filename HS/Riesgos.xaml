@@ -20,6 +20,7 @@
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock Text="Riesgos" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <texrBlock Text="prueba2" />
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
